@@ -1,5 +1,10 @@
 # roxygen2 (development version)
 
+* roxygen2 now does not fail for `@description NULL` and `@details NULL`.
+  Instead, these tags are ignored, except for `@description NULL` in
+  package level documentation, where it can be used to suppress the
+  auto-generated Description section (#1008).
+
 # roxygen2 7.0.2
 
 * `\example{}` escaping has been improved (again!) so that special escapes 
